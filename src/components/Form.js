@@ -8,6 +8,7 @@ import Logo from '../assets/images/imagen_reportes.png';
 import { DateTimePicker,DatePicker,KeyboardDatePicker,MuiPickersUtilsProvider} from "@material-ui/pickers";
 import DateFnsUtils from '@date-io/date-fns';
 import PreloadSimple from './PreloadSimple';
+import {BASE_API} from '../utils/constantes'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -1806,7 +1807,7 @@ export default function  Form () {
 						<form onSubmit={handleSubmit}>
 							<Typography component="h1" variant="h5">Formulario para sacar reportes <Button
 					component={Link}
-					href='http://localhost:3000/'
+					href={BASE_API}
 					variant="contained"
 					color="primary"
 					className={classes.submit}>  Limpiar filtros </Button></Typography>
